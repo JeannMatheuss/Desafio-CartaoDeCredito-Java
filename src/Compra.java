@@ -4,4 +4,10 @@ public class Compra {
     private double valor;
 
 
+    public Compra(String descricao, double valor) {
+        this.descricao = descricao;
+        this.valor = valor;
+    }
+
+
 }
