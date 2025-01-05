@@ -1,18 +1,32 @@
-## Getting Started
+# Sistema de Controle de Cartão de Crédito
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto em Java simula um sistema básico de controle de cartão de crédito, onde o usuário pode registrar compras, verificar o saldo disponível e listar todas as compras realizadas.
 
-## Folder Structure
+## Estrutura do Projeto
 
-The workspace contains two folders by default, where:
+O projeto é composto por três classes principais:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. **Principal**: Contém o método `main` que executa a aplicação, permitindo a interação do usuário com o sistema.
+2. **CartaoDeCredito**: Gerencia o limite do cartão, o saldo disponível e o registro das compras.
+3. **Compra**: Representa cada compra realizada, contendo descrição, valor e métodos para ordenação.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Funcionalidades
 
-## Dependency Management
+1. **Registrar Compras**: O sistema permite registrar compras, verificando se há saldo suficiente.
+2. **Ordenação de Compras**: As compras são ordenadas pelo valor antes de serem exibidas.
+3. **Exibição de Saldo**: O saldo disponível no cartão é exibido ao final da execução.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## Como Executar
+
+1. Certifique-se de ter o Java instalado na sua máquina.
+2. Copie o código para arquivos `.java` separados:
+   - `Principal.java`
+   - `CartaoDeCredito.java`
+   - `Compra.java`
+3. Compile os arquivos utilizando o comando:
+   ```bash
+   javac Principal.java CartaoDeCredito.java Compra.java
