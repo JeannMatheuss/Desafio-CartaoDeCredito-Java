@@ -19,5 +19,9 @@ public class Compra {
         return valor;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Compra: descrição: " + descricao + 
+                " valor: " + valor;
+    }
 }
